@@ -22,7 +22,6 @@ export interface Product {
       id: 3,
       name: 'Mirror',
       price: 105,
-      description: 'A stylist mirror'
     }
   ];
   
