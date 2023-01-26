@@ -1,0 +1,8 @@
+<div>
+    <button type="button" title="plus" (click)="inc()" class="btn">Plus(+)</button>
+    <button type="button" title="minus" (click)="dec()" class="btn">Minus(-)</button>
+
+    <div [style.font-size.px]="size" class="label">Fontsize: {{size}}px</div>
+
+    <div [style.font-size.px]="size">Resizable Text in Child</div>
+</div>
