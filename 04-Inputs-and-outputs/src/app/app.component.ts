@@ -12,5 +12,12 @@ export class AppComponent {
 
   currentItem: string = '01:Component';
 
+  removedItem: string = '';
+
   addItem = (newItem: string) => this.items.push(newItem);
+
+  removeItem = (delItem: string) => {
+    this.removedItem = delItem;
+    this.items = this.items.filter((item) => item !== delItem);
+  };
 }

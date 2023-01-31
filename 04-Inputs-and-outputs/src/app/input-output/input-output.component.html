@@ -1,0 +1,14 @@
+<h2><b>Using @Input() and @Output() together </b></h2>
+
+<p *ngIf="items.length > 0">Click Delete to delete particular item.</p>
+
+<ul *ngFor="let item of items">
+  <li>
+    {{ item }}
+    <span class="delete-item-span">
+      <button class="delete-item" (click)="deleteItem(item)">
+        DELETE
+      </button></span
+    >
+  </li>
+</ul>

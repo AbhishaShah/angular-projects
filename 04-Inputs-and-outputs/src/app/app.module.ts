@@ -4,17 +4,17 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { ItemInputComponent } from './item-input/item-input.component';
 import { ItemOutputComponent } from './item-output/item-output.component';
+import { InputOutputComponent } from './input-output/input-output.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ItemInputComponent,
-    ItemOutputComponent
+    ItemOutputComponent,
+    InputOutputComponent,
   ],
-  imports: [
-    BrowserModule
-  ],
+  imports: [BrowserModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

@@ -9,3 +9,15 @@
 <ul *ngFor="let item of items">
   <li>{{ item }}</li>
 </ul>
+<hr />
+
+<app-input-output
+  [items]="items"
+  (itemOndelete)="removeItem($event)"
+></app-input-output>
+
+<b
+  >Deleted item:
+  <span [style.text-decoration]="'line-through'"> {{ removedItem }}</span></b
+>
+<hr />
