@@ -1,0 +1,46 @@
+<p>My birthday is {{ birthday }}</p>
+
+<p>
+  My birthday is {{ birthday | date }} <b><i> (using Pipe)</i></b>
+</p>
+
+<p>
+  My birthday is {{ birthday | date : "dd/MM/Y" }}
+  <b><i> (using Pipe parameter)</i></b>
+</p>
+
+<p>
+  My birthday is {{ birthday | date : "fullDate" | uppercase }}
+  <b><i> (using Pipe chaining)</i></b>
+</p>
+
+<h2>Built-in Pipes</h2>
+
+<p>
+  {{ "Abhi" | uppercase }} <b><i> (using uppercase)</i></b>
+</p>
+
+<p>
+  {{ "Shah" | lowercase }} <b><i> (using lowercase)</i></b>
+</p>
+
+<p>
+  {{ "Abhi Shah" | titlecase }} <b><i> (using titlecase)</i></b>
+</p>
+
+<p>
+  {{ { name: "abhi" } | json }} <b><i> (using json)</i></b>
+</p>
+
+<p>
+  {{ 100 | currency : "INR" }} <b><i> (using currency)</i></b>
+</p>
+
+<p>
+  I am {{ birthday | age }} <b><i> (using custom pipe)</i></b>
+</p>
+
+<p>
+  I am {{ birthday | age : true : false }}
+  <b><i> (using custom pipe with parameters)</i></b>
+</p>
