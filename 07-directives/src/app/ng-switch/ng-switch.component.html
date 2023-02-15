@@ -1,0 +1,10 @@
+<h2><u>Example of ngSwitch</u></h2>
+
+<div class="row">Enter No: <input type="text" [(ngModel)]="num" /></div>
+
+<div [ngSwitch]="num">
+  <div *ngSwitchCase="1">One</div>
+  <div *ngSwitchCase="2">Two</div>
+  <div *ngSwitchCase="3">Three</div>
+  <div *ngSwitchDefault>This is Default</div>
+</div>
