@@ -1,6 +1,6 @@
-<h1>Directives</h1>
+<h1>Structural Directives</h1>
 
-<h2>Simple example of ngIf</h2>
+<h2><u>Example of ngIf</u></h2>
 <div class="row">Show <input type="checkbox" [(ngModel)]="showMe" /></div>
 
 <h3>ngIf</h3>
@@ -33,3 +33,11 @@
 <p [hidden]="!showMe">
   content to render, when the condition is false. using hidden property binding
 </p>
+
+<hr />
+
+<app-ng-for></app-ng-for>
+
+<hr />
+
+<app-ng-switch></app-ng-switch>

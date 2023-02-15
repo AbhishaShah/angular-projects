@@ -1,0 +1,17 @@
+<h2><u>Example of ngFor</u></h2>
+
+<h3>{{ title }}</h3>
+
+<ul>
+  <li *ngFor="let movie of movies">
+    {{ movie.title }}
+  </li>
+</ul>
+
+<h3>Display movies with index and count</h3>
+
+<ul>
+  <li *ngFor="let movie of movies; let i = index; let c = count">
+    {{ i + 1 }} out of {{ c }} - {{ movie.title }}
+  </li>
+</ul>
