@@ -1,10 +1,7 @@
-<h2>List of Articles</h2>
+<h3>List of Articles</h3>
 
 <app-add-article></app-add-article>
 
-<div
-  class="articles-list"
-  *ngFor="let article of articles | async; let i = index"
->
+<div class="list" *ngFor="let article of articles | async; let i = index">
   <span>{{ i + 1 }}.</span> {{ article.title }}
 </div>

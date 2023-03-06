@@ -11,8 +11,9 @@ import { getArticles } from '../state/article.selector';
   styleUrls: ['./articles-list.component.scss'],
 })
 export class ArticlesListComponent implements OnInit {
+  //There, we have set articles to a type of observable and subscribed to the store to get the articles.
+
   articles!: Observable<Article[]>;
-  //The above code shows the app.component.ts file of our example. There, we have set articles$ to a type of observable and subscribed to the store to get the articles. The addArticle() function is responsible for dispatching new articles to the store.
 
   constructor(private store: Store<AppState>) {}
 

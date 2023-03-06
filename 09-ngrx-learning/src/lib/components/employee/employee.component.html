@@ -1,0 +1,21 @@
+<h3>Employees</h3>
+
+<input #empName type="text" placeholder="name" />
+<input #empRole type="text" placeholder="role" />
+
+<button
+  class="btn btn-primary"
+  (click)="
+    store.addEmployee({ name: empName.value, role: empRole.value });
+    empName.value = '';
+    empRole.value = ''
+  "
+>
+  Add employee
+</button>
+
+<ul>
+  <li class="list" *ngFor="let employee of (store.state$ | async)?.employees">
+    <span>{{ employee.name }} -- {{ employee.role }}</span>
+  </li>
+</ul>
